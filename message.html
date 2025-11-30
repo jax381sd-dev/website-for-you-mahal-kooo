@@ -8,50 +8,56 @@
     <title>My website for you, Mahal</title>
 </head>
 <body>
-    <div id="player-bg-artwork"></div>
-    <div id="player-bg-layer"></div>
-    <div id="player-container">
-        <div id="player">
-            <div id="player-track">
-                <div id="album-name"></div>
-                <div id="track-name"></div>
-                <div id="track-time">
-                    <div id="current-time"></div>
-                    <div id="track-length"></div>
-                </div>
-                <div id="seek-bar-container">
-                    <div id="seek-time"></div>
-                    <div id="s-hover"></div>
-                    <div id="seek-bar"></div>
-                </div>
-            </div>
-            <div id="player-content">
-                <div id="album-art">
-                    <img src="a64.jpg" class="active" id="_1" />
-                    <div id="buffer-box">Buffering ...</div>
-                </div>
-                <div id="player-controls">
-                    <div class="control">
-                        <div class="button" id="play-previous">
-                            <i class="fas fa-backward"></i>
-                        </div>
-                    </div>
-                    <div class="control">
-                        <div class="button" id="play-pause-button">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <div class="control">
-                        <div class="button" id="play-next">
-                            <i class="fas fa-forward"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music player</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<div class="player">
+  <!-- Dashboard -->
+  <div class="dashboard">
+    <!-- title -->
+    <header>
+      <h4>Now playing:</h4>
+      <h2>String 57th & 9th</h2>
+    </header>
+
+    <!-- ikot ikot cd -->
+    <div class="cd">
+      <div class="cd-thumb">
+      </div>
     </div>
-            <div class="footer-wrap">
-            <small>Autoplay lahat ng voice message, mahal. After ng isa, mag-play agad yung isa.</small></div>
+
+    <!-- control man -->
+    <div class="control">
+      <div class="btn btn-repeat">
+        <i class="fas fa-redo"></i>
+      </div>
+      <div class="btn btn-prev">
+        <i class="fas fa-step-backward"></i>
+      </div>
+      <div class="btn btn-toggle-play">
+        <i class="fas fa-pause icon-pause"></i>
+        <i class="fas fa-play icon-play"></i>
+      </div>
+      <div class="btn btn-next">
+        <i class="fas fa-step-forward"></i>
+      </div>
+      <div class="btn btn-random">
+        <i class="fas fa-random"></i>
+      </div>
+    </div>
+
+    <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+
+    <audio id="audio" src=""></audio>
+  </div>
+
+  <!-- Playlist -->
+  <div class="playlist">
+  </div>
+</div>
     <script src='message.js'></script>
 </body>
 </html>
