@@ -56,9 +56,9 @@ const app = {
         "a23.jpg"
     },
     {
-      name: "5",
+      name: "HAPPY BIRTHDAY, LOVE!",
       singer: "",
-      path: "",
+      path: "happy.mp3",
       image:
         "a12.jpg"
     },
